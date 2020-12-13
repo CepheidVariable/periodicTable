@@ -1,0 +1,35 @@
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(18,2fr);
+    grid-template-rows: minmax(50px, auto);
+    gap: .5em;
+}
+.wrapper div{
+    border:2px solid cadetblue;
+    padding: 0 .5em;
+    
+}
+.elem{
+    /* height: 30px; */
+    background-color: burlywood;
+}
+.grp1 p{
+    display: inline-block;
+    padding: 0 27px;
+}
+.grp1{
+    grid-column: 1/19;
+}
+p, h3{
+    margin: 1px;
+    text-align: center;
+}
+.row1{
+    grid-column: 1/2;
+}
+.row1_empty{
+    grid-column: 2/18;
+}
+.row2_empty{
+    grid-column: 3/13;
+}

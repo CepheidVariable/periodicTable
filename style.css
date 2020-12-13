@@ -1,0 +1,88 @@
+/* *{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+} */
+/*
+body{
+    padding: 10px;
+    width: 900px;
+    margin: 0px auto;
+}
+.grid{
+    border: 5px solid rgb(111,41,97);
+    display: grid;
+    grid-template-areas:
+    "grp1 grp1 grp1 grp1"
+    "grp2 blue red yel"
+    "grp2 grp3 green green";
+    grid-template-columns:  40px 100px 460px 300px;
+    grid-template-rows: 50px 300px 120px;
+    gap: 10px;
+}
+.grid > *{
+    background-color: rgba(111,41,97,.4);
+    border-radius: 5px;
+    padding: 10px;
+    inline-size: 50px;
+}
+.grp1{
+    grid-row: grp1;
+}
+.grp2{
+    grid-area: grp2;
+}
+.grp3{
+    grid-area: grp3;
+}
+.blue{
+    grid-area: blue;
+}
+.red{
+    grid-area: red;
+}
+.yel{
+    grid-area: yel;
+}
+.green{
+    grid-area: green;
+} */
+#wrapper {
+    width: 1920px;
+    border: 2px solid magenta;
+}
+.col_1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-shrink: 0;
+}
+#wrapper div:first-of-type > *{
+    width: 46px;
+    height: 25px;
+}
+.col{
+    width: 1920px;
+    height: 800px;
+    padding: 10px;
+}
+.col div{
+    display: inline-block;
+}
+.elem{
+    width: 100px;
+    height: 100px;
+    margin: 8px;
+    text-align: justify;
+}
+.empty{
+    width: 1000px;
+    height: 100px;
+    background-color: rgb(58, 58, 58);
+}
+
+/* span{
+    margin-right: 20px;
+}
+div span:last-of-type{
+display: block;} */
