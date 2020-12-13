@@ -3,6 +3,8 @@
 }
     body{
     width: 1080px;
+    background-color: rgb(238, 238, 238);
+    margin: 2% 0 0 2%;
 }
 .wrapper{
     display: grid;
@@ -21,9 +23,6 @@
     border:2px solid rgb(128, 128, 128);
     padding: 0 .5em;
     
-}
-.elem{
-    background-color: burlywood;
 }
 .elem h3{
     color: blue;
