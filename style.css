@@ -1,88 +1,90 @@
-/* *{
-    padding: 0px;
-    margin: 0px;
+*{
     box-sizing: border-box;
-} */
-/*
-body{
-    padding: 10px;
-    width: 900px;
-    margin: 0px auto;
 }
-.grid{
-    border: 5px solid rgb(111,41,97);
+    body{
+    width: 1080px;
+    background-color: rgb(238, 238, 238);
+    margin: 2% 0 0 2%;
+}
+.wrapper{
     display: grid;
-    grid-template-areas:
-    "grp1 grp1 grp1 grp1"
-    "grp2 blue red yel"
-    "grp2 grp3 green green";
-    grid-template-columns:  40px 100px 460px 300px;
-    grid-template-rows: 50px 300px 120px;
-    gap: 10px;
+    grid-template-columns: repeat(2, auto);
+    gap: .5em;
 }
-.grid > *{
-    background-color: rgba(111,41,97,.4);
-    border-radius: 5px;
-    padding: 10px;
-    inline-size: 50px;
+.table{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    display: grid;
+    grid-template-columns: 64px 64px 10px 64px 64px 64px 64px 64px 64px 64px 64px 64px 64px 64px 64px 64px 64px 64px 64px;
+    grid-template-rows: minmax(50px auto);
+    gap: .24em;
+}
+.wrapper div.elem{
+    padding: 0 .5em;
+}
+.elem h3{
+    color: blue;
+}
+.elem p{
+    font-size: 10pt;
 }
 .grp1{
-    grid-row: grp1;
+    display: flex;
+    justify-content: space-around;
 }
-.grp2{
-    grid-area: grp2;
+.grp1 p{
+    display: inline-block;
+    width: 64px;
 }
-.grp3{
-    grid-area: grp3;
+.grp2 p{
+    height: 67px;
+    margin-bottom: .12em;
+    padding-top: 24px;
+}
+/* Centers and Aligns all Element text with Group Text */
+p, h3{
+    margin: 1px;
+    text-align: center;
+}
+.emptyCol{
+    grid-column-start: 3;
+    grid-row-start: 2;
+    grid-row-end: 8;
+}
+.empty1{
+    grid-column: 2/19;
+}
+.empty2{
+    grid-column-start: span 10;
+}
+.empty3{
+    grid-column-start: span 18;
+    height: 20px;
+}
+.empty4{
+    grid-column-start: span 2;
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px 50px 0 0;
+}
+.aster{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 15px;
 }
 .blue{
-    grid-area: blue;
+    background-color: rgb(104, 155, 255);
 }
-.red{
-    grid-area: red;
+.pink{
+    background-color: rgb(253, 154, 153);
 }
-.yel{
-    grid-area: yel;
+.yellow{
+    background-color: rgb(254, 203, 0)
 }
 .green{
-    grid-area: green;
-} */
-#wrapper {
-    width: 1920px;
-    border: 2px solid magenta;
+    background-color: rgb(31, 202, 33);
 }
-.col_1{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    flex-shrink: 0;
+.textRed{
+    color:red;
 }
-#wrapper div:first-of-type > *{
-    width: 46px;
-    height: 25px;
-}
-.col{
-    width: 1920px;
-    height: 800px;
-    padding: 10px;
-}
-.col div{
-    display: inline-block;
-}
-.elem{
-    width: 100px;
-    height: 100px;
-    margin: 8px;
-    text-align: justify;
-}
-.empty{
-    width: 1000px;
-    height: 100px;
-    background-color: rgb(58, 58, 58);
-}
-
-/* span{
-    margin-right: 20px;
-}
-div span:last-of-type{
-display: block;} */
