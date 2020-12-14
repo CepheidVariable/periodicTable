@@ -20,6 +20,7 @@
     gap: .24em;
 }
 .wrapper div.elem{
+    border: 2px solid rgb(128, 128, 128);
     padding: 0 .5em;
 }
 .elem h3{
@@ -37,7 +38,7 @@
     width: 64px;
 }
 .grp2 p{
-    height: 67px;
+    height: 61px;
     margin-bottom: .12em;
     padding-top: 24px;
 }
